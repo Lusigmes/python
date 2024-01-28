@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="col-md-6 d-flex justify-content-end"> <!-- Ajuste a classe para justify-content-end -->
-                    {% csrf_token %}
+                    {% comment %} {% csrf_token %} {% endcomment %}
                     <div class="box-form">
                         <div class="box-cicle">
                             <div class="circle c1"></div>
@@ -37,7 +37,8 @@
                         </div>
                         <h3>Register Now</h3>
                         
-                        <form method="post" action="">
+                        <form method="post" action="{% url 'cadastro' %}">
+                            {% csrf_token %}
                             <div class="form-group mb-2">
                                 <label for="username" class="mb-0">Username</label>
                                 <input type="text" class="form-control-6 col-12" id="username" name="username" required>

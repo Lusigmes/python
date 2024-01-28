@@ -4,7 +4,7 @@
 # python manage.py migrate # criar bancos
 
 
-# 1:12:00
+# 1:32:00
 
 
 # mvt model-view-template
@@ -20,6 +20,10 @@
 #[3]
 #[4]
 #[5]
+
+# inserir linha abaixo no form, para receber dados do formulario 
+# <form method="post" action="{% url 'cadastro' %}">      {% csrf_token %}
+# cadastro referente ao name = "cadastro" em /usuarios/urls.py
 
 
 """
