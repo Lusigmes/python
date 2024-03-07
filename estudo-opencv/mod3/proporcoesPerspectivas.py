@@ -34,7 +34,7 @@ cv2.imshow('Resultado', img_redimensionada)
 cv2.waitKey(0)
 """""
 
-""""" #redeminensionando imagem com tecnica de slicing, redimensionando até 1/4 da imagem original
+#redimensionando imagem com tecnica de slicing, redimensionando até 1/4 da imagem original
 import numpy as np
 import cv2
 # import imutils
@@ -44,4 +44,3 @@ cv2.imshow("Original", img)
 img_redimensionada = img[::2,::2]
 cv2.imshow("Imagem redimensionada", img_redimensionada)
 cv2.waitKey(0)
-"""""
