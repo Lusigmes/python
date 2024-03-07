@@ -16,7 +16,6 @@ cv2.waitKey(0) #espera pressionar qualquer tecla
 cv2.imwrite("saida.jpg", imagem)
 """""
 
-
 """"" #canal de cores bgr de cada posição do pixel
 import cv2
 imagem = cv2.imread('saida.jpg')

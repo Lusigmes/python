@@ -1,4 +1,4 @@
-""""" # cria varios retangulos coloridos sobre a imagem
+ # cria varios retangulos coloridos sobre a imagem
 import cv2
 imagem = cv2.imread('../entrada.jpg')
 # imagem[0][0] = (0,255,0)
@@ -6,8 +6,8 @@ imagem = cv2.imread('../entrada.jpg')
 # imagem[0][2] = (0,255,0)
 # imagem[1][0] = (0,255,0)
 # imagem[2][0] = (0,255,0)
-# imagem[2][2] = (0,255,0)
-imagem[30:100 , 70:100] = (0,255,0)
+# imagem[2][2] = (0,255,0) 
+imagem[30:100 , 70:100] = (0,255,0) #LINHA 31 A 100 #COLUNA 71 A 100
 #Cria um quadrado vermelho
 imagem[100:150, 50:100] = (0, 0, 255)
 #Cria um retangulo amarelo por toda a altura da imagem
@@ -25,7 +25,6 @@ imagem[70:100, 300: 450] = (0, 0, 0)
 cv2.imwrite("alterada.jpg", imagem)
 cv2.imshow("Imagem", imagem)
 cv2.waitKey(0)
-"""""
 
 """"" # desenho de formas geometricas na imagem
 import numpy as np
@@ -35,6 +34,7 @@ vermelho = (0, 0, 255)
 verde = (0, 255, 0)
 azul = (255, 0, 0)
 
+#IMG, ALTURA?P_INICIAL?X LARGURA?P_FINAL?Y COR , ESPESSURA
 cv2.line(imagem, (0, 0), (200, 300), verde)
 cv2.line(imagem, (400, 300), (150, 150), vermelho, 5)
 cv2.rectangle(imagem, (100, 100), (240, 240), azul, 10)
@@ -58,14 +58,5 @@ fonte = cv2.FONT_HERSHEY_SIMPLEX
 cv2.putText(imagem,'OpenCV',(15,65), fonte,
 2,(255,255,255),2,cv2.LINE_AA)
 cv2.imshow("onça", imagem)
-cv2.waitKey(0)
-"""""
-
-""""" #recortando img
-import cv2
-imagem = cv2.imread('../entrada.jpg')
-recorte = imagem[436:512, 605:739] #linha 436+1 até 512 e coluna 605+1 até 739
-cv2.imwrite("recorte.jpg", recorte) #salva no disco
-cv2.imshow("Recorte da imagem", recorte)
 cv2.waitKey(0)
 """""
