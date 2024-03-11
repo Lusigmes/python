@@ -23,9 +23,7 @@ elif score["neg"] != 0:
     st.write("## Análise negativa.")
 elif score["pos"] != 0:
     st.write(score)
-    st.write("## Análise positiva.")
-    st.write(score)
-    
+    st.write("## Análise positiva.")    
     
 # etapa 3 - uso do sistema
 # streamlit run analise.py
