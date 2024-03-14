@@ -65,3 +65,4 @@ for y in range(0, imagem.shape[0], 10): #percorre linhas
         imagem[y:y+5, x: x+5] = (255,0,255)
 cv2.imshow("Imagem modificada", imagem)
 cv2.waitKey(0)
+cv2.destroyAllWindows()

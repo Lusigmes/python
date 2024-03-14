@@ -70,5 +70,5 @@ img_com_mascara = cv2.bitwise_and(img, img, mask = mascara)
 
 cv2.imshow("Máscara aplicada à imagem", img_com_mascara)
 cv2.waitKey(0)
-
+cv2.destroyAllWindows()
 

@@ -25,6 +25,7 @@ imagem[70:100, 300: 450] = (0, 0, 0)
 cv2.imwrite("alterada.jpg", imagem)
 cv2.imshow("Imagem", imagem)
 cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 """"" # desenho de formas geometricas na imagem
 import numpy as np

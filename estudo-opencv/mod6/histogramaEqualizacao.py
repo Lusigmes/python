@@ -96,6 +96,7 @@ plt.show()
 
 # Dessa forma temos uma distribuição mais uniforme das intensidades dos pixels na 
 # imagem. Lembre-se que detalhes podem inclusive serem perdidos com este processamento de imagem.
+# é garantido é o aumento de contraste
 
 from matplotlib import pyplot as plt
 import numpy as np
@@ -120,4 +121,4 @@ plt.hist(img.ravel(), 256, [0,256])
 plt.xlim([0, 256])
 plt.show()
 cv2.waitKey(0)
-
+cv2.destroyAllWindows()
