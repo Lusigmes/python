@@ -38,3 +38,4 @@ for arq in arquivos:
         cv2.imshow(f"{len(faces)} face(s) encontrada(s). {count_eyes} eyes and {count_smiles} smiles detected", img_resized)       
         cv2.waitKey(0)
         cv2.destroyAllWindows()  
+        
