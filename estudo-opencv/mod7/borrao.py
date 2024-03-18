@@ -45,10 +45,6 @@ cv2.imshow("Imagens suavizadas por mediana", suavizarMediana)
 cv2.waitKey(0)
 """
 
-""" # filtro bilateral(mais lento que os anteriores)
-# preserva as bordas e garante a remoção do ruído
-"""
-
 """ # filtro gaussiana
 # gera menos borrão, produz um efeito mais natural e reduz o ruído na imagem
 import cv2
@@ -71,6 +67,10 @@ cv2.imshow("Imagens suavizadas pelo filtro Gaussiano", suavizarGaussiana)
 cv2.waitKey(0)
 """
 
+
+""" # filtro bilateral(mais lento que os anteriores)
+# preserva as bordas e garante a remoção do ruído
+"""
 import cv2
 import numpy as np
 img = cv2.imread("../cat.jpg")
