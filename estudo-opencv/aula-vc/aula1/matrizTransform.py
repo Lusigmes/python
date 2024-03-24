@@ -5,7 +5,7 @@ import sys
 from matplotlib import pyplot as plt
 
 # filename = sys.argv[1]
-img = cv2.imread("../cat.jpg")
+img = cv2.imread("imagens/cat.jpg")
 img = cv2.cvtColor(img , cv2.COLOR_BGR2RGB)
 
 #DIM
@@ -33,10 +33,10 @@ m_scaling = np.float32([[1, 0, 0], [0, 0.7, 0]])
 m_translation = np.float32([[1, 0, 180], [0, 1, 100]])
 
 # cisalhamento hotizontal
-m_cisalhamentoh = np.float32([[1, 0.5, 0], [0, 1, 0]])
+m_cisalhamentoh = np.float32([[1, 0.5, 0], [0, 1, 0]]) # y em fator do eixo x
 
 # cisalhamento vertical
-m_cisalhamentov = np.float32([[1, 0, 0], [0.5, 1, 0]])
+m_cisalhamentov = np.float32([[1, 0, 0], [0.5, 1, 0]]) # x em fator do eixo y
 
 #computa transformações
 img_rotacionada = cv2.warpAffine(img, m_rotated, (w, h))

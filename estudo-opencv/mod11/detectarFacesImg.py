@@ -22,6 +22,7 @@ for arq in arquivos:
         for (x, y, w, h) in faces:
             # cv2.rectangle(image, start_point, end_point, color, thickness) 
             cv2.rectangle(imgC, (x,y), (x+w, y+h), (0, 255, 255), 7 )
+            
             roi_gray = imgC[y:y+h, x:x+w]
             roi_bgr = img[y:y+h, x:x+w]
             

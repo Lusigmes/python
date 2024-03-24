@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Carregar imagem em tons de cinza
-img = cv2.imread('../cat.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('cat.jpg', cv2.IMREAD_GRAYSCALE)
 
 # Definir kernel para operações morfológicas
 kernel = np.ones((5,5), np.uint8)
